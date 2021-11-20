@@ -66,4 +66,13 @@ Temporary Items
 dist
 build
 build-typescript
+.storybook
 .stylelintcache
+
+*.html
+config/webpack/
+webpack.config.js
+.prettierignore
+.gitignore
+README.md
+

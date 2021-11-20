@@ -1,0 +1,53 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:react-hooks/recommended",
+		"plugin:jsx-a11y/recommended",
+		"plugin:@typescript-eslint/recommended",
+		"prettier"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": ["react", "@typescript-eslint", "@emotion"],
+	"rules": {
+		"react/boolean-prop-naming": 2,
+		"react/function-component-definition": [
+			2,
+			{
+				"namedComponents": "function-declaration",
+				"unnamedComponents": "arrow-function"
+			}
+		],
+		"react/no-access-state-in-setstate": 2,
+		"react/no-danger": 2,
+		"react/react-in-jsx-scope": 0,
+		"react/void-dom-elements-no-children": 2,
+		"no-restricted-imports": [
+			"error",
+			{
+				"patterns": ["@/features/*/*"]
+			}
+		],
+		"@emotion/pkg-renaming": "error",
+		"@emotion/jsx-import": "off",
+		"@emotion/no-vanilla": "error",
+		"@emotion/import-from-emotion": "error",
+		"@emotion/styled-import": "error"
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	}
+}

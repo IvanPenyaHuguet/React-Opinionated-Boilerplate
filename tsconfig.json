@@ -1,0 +1,36 @@
+{
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": ".",
+		"rootDir": "src",
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"jsx": "react-jsx",
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"target": "ESNext",
+		"noEmit": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"strict": false,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noImplicitAny": true,
+		"noImplicitOverride": true,
+		"importHelpers": true,
+		"strictNullChecks": true,
+		"useUnknownInCatchVariables": false,
+		"suppressImplicitAnyIndexErrors": true,
+		"noUnusedLocals": true,
+		"allowUnreachableCode": false,
+		"exactOptionalPropertyTypes": false,
+		"noFallthroughCasesInSwitch": false,
+		"paths": {
+			"@/*": ["src/*"]
+		},
+		"types": ["@emotion/core"]
+	},
+	"include": ["src/**/*.ts", "src/**/*.tsx", "tests/**/*.ts"],
+	"exclude": ["node_modules"]
+}

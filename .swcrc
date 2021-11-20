@@ -1,0 +1,44 @@
+{
+  "minify": true,
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true,
+      "decorators": false,
+      "dynamicImport": true
+    },
+    "transform": {
+      "react": {
+        "pragma": "React.createElement",
+        "pragmaFrag": "React.Fragment",
+        "throwIfNamespace": true,
+        "runtime": "automatic",
+        "refresh": true,
+        "importSource": "@emotion/react"
+      },
+      "optimizer": {
+        "globals": {
+          "vars": {
+            "__DEBUG__": "true"
+          }
+        }
+      }      
+    },
+    "target": "es2015",  
+    "loose": false,
+    "externalHelpers": false,
+    "keepClassNames": false,
+    "minify": {
+      "compress": true,
+      "mangle": true
+    },
+    "baseUrl": ".",
+    "paths": {
+			"@/*": ["src/*"]
+		}  
+  },
+  "env": {      
+    "coreJs": 3
+  },
+  "sourceMaps": true  
+}
