@@ -76,3 +76,4 @@ webpack.config.js
 .gitignore
 README.md
 tmp
+target
