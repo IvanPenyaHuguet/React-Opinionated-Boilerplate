@@ -1,7 +1,7 @@
 {
-	"name": "react-opinionated-stack",
-	"version": "1.0.0",
-	"description": "a",
+	"name": "react-opinionated-boilerplate",
+	"version": "0.0.2",
+	"description": "A boilerplate for large project with a defined architecture and some opinionated features to standarize development and increase productivity",
 	"private": true,
 	"scripts": {
 		"build-dev": "cross-env NODE_ENV=development webpack --mode=development",
@@ -19,7 +19,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "a"
+		"url": "https://github.com/IvanPenyaHuguet/React-Opinionated-Boilerplate"
 	},
 	"keywords": [
 		"React boilerplate",
