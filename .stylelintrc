@@ -1,4 +1,5 @@
 {
+	"cacheLocation": "tmp",
 	"defaultSeverity": "error",
 	"extends": [
 		"stylelint-config-standard",

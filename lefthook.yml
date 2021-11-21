@@ -15,8 +15,19 @@ pre-commit:
     parallel: true
     commands:
         eslint:
-            run: npx eslint --fix {staged_files}
+            run: npm run lint
         stylelint:
             run: npm run stylelint
         prettier:
-            run: npx pretty-quick --staged"
+            run: npx pretty-quick --staged
+commit-msg:
+    parallel: true
+    commands:
+        lint-commit:
+            run: npx commitlint --edit
+
+pre-push:
+    parallel: true
+    commands:
+        test:
+            run: npm run test

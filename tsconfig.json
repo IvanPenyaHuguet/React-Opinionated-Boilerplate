@@ -2,9 +2,9 @@
 	"compilerOptions": {
 		"allowSyntheticDefaultImports": true,
 		"baseUrl": ".",
-		"rootDir": "src",
+		"rootDir": ".",
 		"forceConsistentCasingInFileNames": true,
-		"isolatedModules": true,
+		"isolatedModules": false,
 		"jsx": "react-jsx",
 		"lib": ["DOM", "DOM.Iterable", "ESNext"],
 		"module": "ESNext",
@@ -27,10 +27,17 @@
 		"exactOptionalPropertyTypes": false,
 		"noFallthroughCasesInSwitch": false,
 		"paths": {
-			"@/*": ["src/*"]
+			"@/*": ["src/*"],
+			"@tests/*": ["tests/*"]
 		},
-		"types": ["@emotion/core"]
+		"types": ["@emotion/core", "@types/jest", "@types/node"]
 	},
-	"include": ["src/**/*.ts", "src/**/*.tsx", "tests/**/*.ts"],
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.tsx",
+		"tests/**/*.ts",
+		"src/*.ts",
+		"tests/*.ts"
+	],
 	"exclude": ["node_modules"]
 }

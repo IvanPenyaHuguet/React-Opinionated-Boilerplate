@@ -1,4 +1,6 @@
 ### VisualStudioCode ###
+.vscode
+/.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -67,3 +69,4 @@ dist
 build
 build-typescript
 .stylelintcache
+tmp
